@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    background-color: antiquewhite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    padding: 0;
+    margin: 0;
+    font-family: "Nunito", serif;
+    /* position: sticky; */
+}
+
+/* .navigate {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    color: white;
+    top: 0px;
+} */
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 70px;
+    background-color: black;
+    color: white;
+    
+}
+
+nav ul li {
+    padding: 0 13px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.brand img {
+    width: 48px;
+    padding: 0 8px;
+}
+
+.container {
+    margin: auto;
+    min-height: 69vh;
+    background-color: black;
+    color: white;
+    font-family: "Nunito", serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    background-image: url('image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bottom {
+    position: sticky;
+    height: 110px;
+    background-color: black;
+    color: wheat;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#myProgressBar {
+    width: 80vw;
+    /* text-align: center; */
+    cursor: pointer;
+}
+
+.icons {
+    margin-top: 14px;
+
+}
+
+.icons i {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    background-color: white;
+    width: 80%;
+    color: black;
+    margin: 15px 50px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.songItem img {
+    width: 40px;
+    margin: 0 22px;
+    border-radius: 34px;
+}
+
+.timestamp {
+    margin: 0 23px;
+    ;
+}
+
+.timestamp i {
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    margin-top: 1.5vw;
+    font-family: "Nunito", serif;
+
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
