@@ -216,7 +216,37 @@ const makeAllPlays = () => {
     });
 };
 
+// Handle play/pause for individual song items
+// Array.from(document.getElementsByClassName('songItemPlay')).forEach((element, i) => {
+//     element.addEventListener('click', (e) => {
+//         // Check if the clicked song is already playing
+//         if (audioElement.src === songs[i].filePath && !audioElement.paused) {
+//             // If the song is playing, pause it
+//             audioElement.pause();
+//             e.target.classList.remove('fa-pause');
+//             e.target.classList.add('fa-play');
+//             gif.style.opacity = 0;
+//         } else {
+//             // Otherwise, play the clicked song
+//             makeAllPlays();  // Pause all other songs
+//             songIndex = i;  // Update song index to the clicked song
+//             masterSongName.innerText = songs[songIndex].songName;
+//             audioElement.src = songs[songIndex].filePath;
+//             audioElement.currentTime = 0;
 
+//             audioElement.play();
+//             e.target.classList.remove('fa-play');
+//             e.target.classList.add('fa-pause');
+//             gif.style.opacity = 1;
+
+//             // Update the master play button to show pause
+//             masterPlay.classList.remove('fa-play');
+//             masterPlay.classList.add('fa-pause');
+
+//             // document.getElementsByClassName('songTime')[songIndex].innerText = '00:00';
+//         }
+//     });
+// });
 
 Array.from(document.getElementsByClassName('songItemPlay')).forEach((element, i) => {
     element.addEventListener('click', (e) => {
