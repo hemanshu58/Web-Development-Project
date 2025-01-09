@@ -108,6 +108,8 @@ nav ul li {
     border-radius: 30px;
 }
 
+
+
 .songItem img {
     width: 40px;
     margin: 0 22px;
@@ -116,7 +118,7 @@ nav ul li {
 
 .timestamp {
     margin: 0 23px;
-    ;
+    
 }
 
 .timestamp i {
